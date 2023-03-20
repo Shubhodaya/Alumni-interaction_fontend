@@ -1,0 +1,35 @@
+.alumni {
+    width: 700px;
+    background: rgba(0, 17, 255, 0.196);
+    border: 1px solid hsl(186 100% 69%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 6rem 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.alumni > .button {
+
+    
+    background:  #0830AE;
+    
+    border: 1px solid #1877f2;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+   
+    /* margin: 2rem 16rem; */
+    margin-left: 16rem;
+    margin-right: 16rem;
+    margin-top: 4rem;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.alumni > .button:hover{
+    scale:1.1;
+}

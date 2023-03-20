@@ -1,0 +1,52 @@
+<DataTable columns={columns} data={filteredData} pagination 
+            
+fixedHeader
+fixedHeaderScrollHeight="450px"
+highlightOnHover
+customStyles={
+    {
+headCells: {
+style: {
+fontSize: '20px',
+fontWeight: 'bold',
+
+
+backgroundColor: "#CCFFFF"
+},
+},
+}
+}
+subHeader
+subHeaderComponent={<input type="text" placeholder="Search Here" 
+ value={search}
+    onChange={(e)=> setSearch(e.target.value)}
+ />} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <Router>
+        <Routes>
+        <Route path="/alumniHomePage" element={<div className="App"><AlumniHomePage /></div>} />
+        <Route exact path="/"  element={user && user._id ? <Homepage setLoginUser={setLoginUser} /> :
+
+        <div className="App" > 
+        <div style={{margin:"5rem" }}><Login setLoginUser={setLoginUser}/></div> 
+        <div style={{margin:"5rem" }} ><AlumniRegister /></div>
+        </div> } 
+
+        />
+        <Route path="/login" element={ <div className="App"> <Login setLoginUser={setLoginUser}/> </div>} />
+        <Route path="/register" element={<div className="App"> <Register /> </div>} />
+        <Route path="/alumniRegister" element={<div className="App"> <AlumniRegister /> </div>} />
+        </Routes>
+      </Router>
